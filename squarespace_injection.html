@@ -1,0 +1,167 @@
+<style>
+#sqsp-content-nav, header, .header, [data-section-theme], .site-header { display: none !important; }
+
+.bpd-wrap { font-family: 'Cormorant Garamond', Georgia, serif; background: #FAF7F2; color: #2C1F14; margin: 0; padding: 0; }
+
+/* HERO */
+.bpd-hero { background: #4A3728; min-height: 100vh; display: flex; align-items: flex-end; padding: 80px 70px; position: relative; overflow: hidden; }
+.bpd-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 70%, rgba(196,168,130,0.15) 0%, transparent 60%); }
+.bpd-hero-content { position: relative; z-index: 2; max-width: 600px; }
+.bpd-eyebrow { font-family: 'Jost', 'Helvetica Neue', sans-serif; font-size: 0.65rem; letter-spacing: 0.28em; text-transform: uppercase; color: #C4A882; margin-bottom: 24px; display: flex; align-items: center; gap: 14px; }
+.bpd-eyebrow::before { content: ''; display: block; width: 32px; height: 1px; background: #C4A882; opacity: 0.6; }
+.bpd-hero h1 { font-size: clamp(3.5rem, 6vw, 6rem); font-weight: 300; line-height: 1.05; color: #FFFDF9; margin: 0 0 8px 0; }
+.bpd-hero h1 em { font-style: italic; color: #C4A882; }
+.bpd-hero-title { font-size: clamp(1.1rem, 2vw, 1.5rem); font-style: italic; font-weight: 300; color: #D4C8BC; margin: 0 0 40px 0; }
+.bpd-hero-line { width: 48px; height: 1px; background: #C4A882; opacity: 0.6; margin-bottom: 28px; }
+.bpd-hero-tagline { font-family: 'Jost', 'Helvetica Neue', sans-serif; font-size: 0.88rem; font-weight: 300; line-height: 1.9; color: #D4C8BC; max-width: 360px; }
+.bpd-hero-quote { position: absolute; right: 70px; bottom: 80px; text-align: right; max-width: 340px; }
+.bpd-hero-quote blockquote { font-size: clamp(1.2rem, 2vw, 1.6rem); font-style: italic; font-weight: 300; color: #C4A882; line-height: 1.5; margin: 0 0 16px 0; }
+.bpd-hero-quote cite { font-family: 'Jost', 'Helvetica Neue', sans-serif; font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: #9E8E7E; font-style: normal; }
+
+/* PHILOSOPHY */
+.bpd-philosophy { padding: 120px 70px; max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 200px 1fr; gap: 80px; align-items: start; }
+.bpd-label { font-family: 'Jost', 'Helvetica Neue', sans-serif; font-size: 0.62rem; letter-spacing: 0.28em; text-transform: uppercase; color: #C4A882; padding-top: 12px; }
+.bpd-philosophy h2 { font-size: clamp(2rem, 3.5vw, 3.2rem); font-weight: 300; line-height: 1.15; color: #4A3728; margin: 0 0 36px 0; }
+.bpd-philosophy h2 em { font-style: italic; color: #C4A882; }
+.bpd-body { font-family: 'Jost', 'Helvetica Neue', sans-serif; font-size: 1rem; line-height: 1.95; color: #7A5C3E; font-weight: 300; margin-bottom: 28px; }
+.bpd-body + .bpd-body { border-top: 1px solid #D4C8BC; padding-top: 28px; }
+
+/* PRINCIPLES */
+.bpd-principles { background: #4A3728; padding: 100px 70px; }
+.bpd-principles-inner { max-width: 1200px; margin: 0 auto; }
+.bpd-principles h2 { font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 300; color: #FFFDF9; line-height: 1.2; margin: 0 0 60px 0; }
+.bpd-principles h2 em { font-style: italic; color: #C4A882; }
+.bpd-label-light { font-family: 'Jost', 'Helvetica Neue', sans-serif; font-size: 0.62rem; letter-spacing: 0.28em; text-transform: uppercase; color: #C4A882; margin-bottom: 20px; }
+.bpd-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+.bpd-card { background: rgba(255,253,249,0.04); padding: 48px 40px; border: 1px solid rgba(196,168,130,0.12); }
+.bpd-card-num { font-size: 3rem; font-weight: 300; color: rgba(196,168,130,0.2); line-height: 1; margin-bottom: 20px; }
+.bpd-card-title { font-size: 1.3rem; font-weight: 400; color: #FFFDF9; margin-bottom: 14px; font-style: italic; }
+.bpd-card-text { font-family: 'Jost', 'Helvetica Neue', sans-serif; font-size: 0.82rem; line-height: 1.9; color: #9E8E7E; font-weight: 300; }
+
+/* PROJECT */
+.bpd-project { padding: 120px 70px; max-width: 1200px; margin: 0 auto; }
+.bpd-project-header { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; margin-bottom: 60px; align-items: end; }
+.bpd-project h2 { font-size: clamp(2rem, 3.5vw, 3.2rem); font-weight: 300; color: #4A3728; line-height: 1.15; margin: 0; }
+.bpd-project h2 em { font-style: italic; color: #C4A882; }
+.bpd-project-desc { font-family: 'Jost', 'Helvetica Neue', sans-serif; font-size: 0.92rem; line-height: 1.95; color: #7A5C3E; font-weight: 300; }
+.bpd-specs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+.bpd-spec { background: #E8DDD0; padding: 36px 28px; border: 1px solid #D4C8BC; }
+.bpd-spec-val { font-size: 2.6rem; font-weight: 300; color: #7A5C3E; line-height: 1; margin-bottom: 8px; }
+.bpd-spec-label { font-family: 'Jost', 'Helvetica Neue', sans-serif; font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: #9E8E7E; }
+
+/* CONTACT */
+.bpd-contact { background: #F5F0E8; border-top: 1px solid #D4C8BC; padding: 100px 70px; text-align: center; }
+.bpd-contact-inner { max-width: 520px; margin: 0 auto; }
+.bpd-contact h2 { font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 300; color: #4A3728; margin: 0 0 16px 0; }
+.bpd-contact h2 em { font-style: italic; color: #C4A882; }
+.bpd-contact-sub { font-family: 'Jost', 'Helvetica Neue', sans-serif; font-size: 0.85rem; line-height: 1.8; color: #9E8E7E; margin-bottom: 48px; }
+.bpd-contact-item { display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 20px; }
+.bpd-contact-lbl { font-family: 'Jost', 'Helvetica Neue', sans-serif; font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: #C4A882; width: 60px; text-align: right; }
+.bpd-contact-val { font-family: 'Jost', 'Helvetica Neue', sans-serif; font-size: 0.9rem; color: #7A5C3E; }
+.bpd-contact-val a { color: #7A5C3E; text-decoration: none; border-bottom: 1px solid #D4C8BC; padding-bottom: 2px; }
+.bpd-btn { display: inline-block; margin-top: 40px; padding: 16px 48px; background: #4A3728; color: #FFFDF9; font-family: 'Jost', 'Helvetica Neue', sans-serif; font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; text-decoration: none; border: 1px solid #4A3728; transition: background 0.3s; }
+.bpd-btn:hover { background: #7A5C3E; }
+
+/* FOOTER */
+.bpd-footer { background: #2C1F14; padding: 36px 70px; display: flex; align-items: center; justify-content: space-between; }
+.bpd-footer-logo { font-size: 0.9rem; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; color: #9E8E7E; }
+.bpd-footer-copy { font-family: 'Jost', 'Helvetica Neue', sans-serif; font-size: 0.65rem; color: rgba(158,142,126,0.5); }
+
+@media (max-width: 900px) {
+  .bpd-hero { padding: 100px 32px 60px; }
+  .bpd-hero-quote { display: none; }
+  .bpd-philosophy { grid-template-columns: 1fr; gap: 24px; padding: 80px 32px; }
+  .bpd-principles { padding: 80px 32px; }
+  .bpd-grid { grid-template-columns: 1fr; }
+  .bpd-project { padding: 80px 32px; }
+  .bpd-project-header { grid-template-columns: 1fr; gap: 24px; }
+  .bpd-specs { grid-template-columns: repeat(2, 1fr); }
+  .bpd-contact { padding: 80px 32px; }
+  .bpd-footer { flex-direction: column; gap: 12px; text-align: center; padding: 32px; }
+}
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+
+<div class="bpd-wrap">
+
+  <div class="bpd-hero">
+    <div class="bpd-hero-content">
+      <div class="bpd-eyebrow">Interior Design</div>
+      <h1>Valerie<br><em>Colaizzi</em></h1>
+      <p class="bpd-hero-title">Principal Designer</p>
+      <div class="bpd-hero-line"></div>
+      <p class="bpd-hero-tagline">Interiors conceived at the intersection of place, memory, and light — designed to be lived in fully, not merely admired.</p>
+    </div>
+    <div class="bpd-hero-quote">
+      <blockquote>"A room should tell the story of who you are — and who you are becoming."</blockquote>
+      <cite>— Valerie Colaizzi</cite>
+    </div>
+  </div>
+
+  <div class="bpd-philosophy">
+    <div class="bpd-label">Philosophy</div>
+    <div>
+      <h2>Design that holds <em>the weight</em> of a life well lived.</h2>
+      <p class="bpd-body">Every space I design begins with a question: what does this place need to feel like at six in the morning, and again at midnight? The answer is never purely aesthetic — it is about the quality of light, the warmth of materials, the way a room invites stillness or gathers people in. I believe that truly exceptional interiors are inseparable from the lives they hold.</p>
+      <p class="bpd-body">My approach is rooted in restraint and intention. I do not impose a signature style — I listen for the soul of a place and amplify it. Natural materials, honest craftsmanship, and an unwavering attention to proportion are the constants. The result is always singular: an interior that could exist nowhere else and belong to no one else.</p>
+    </div>
+  </div>
+
+  <div class="bpd-principles">
+    <div class="bpd-principles-inner">
+      <div class="bpd-label-light">The Approach</div>
+      <h2>Three convictions that guide every <em>decision.</em></h2>
+      <div class="bpd-grid">
+        <div class="bpd-card">
+          <div class="bpd-card-num">01</div>
+          <div class="bpd-card-title">Place Before Aesthetics</div>
+          <p class="bpd-card-text">The landscape, light, and history of a location are not backdrop — they are the brief. A lakefront home in the Tennessee hills demands a different truth than a residence anywhere else. I design from the outside in, letting the setting lead.</p>
+        </div>
+        <div class="bpd-card">
+          <div class="bpd-card-num">02</div>
+          <div class="bpd-card-title">Materials with Memory</div>
+          <p class="bpd-card-text">I favor materials that age beautifully: aged oak, hand-thrown ceramics, linen that softens with use, stone that holds warmth. Interiors should look better at ten years than at ten days. Patina is not wear — it is the evidence of a life fully inhabited.</p>
+        </div>
+        <div class="bpd-card">
+          <div class="bpd-card-num">03</div>
+          <div class="bpd-card-title">Silence as Element</div>
+          <p class="bpd-card-text">The finest rooms breathe. I design for negative space as deliberately as for furnishing — the pause between a window and a wall, the bare surface that allows the eye to rest. A room that says everything says nothing. Restraint is the most sophisticated design choice.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bpd-project">
+    <div class="bpd-project-header">
+      <div>
+        <div class="bpd-label" style="margin-bottom:20px;">Current Work</div>
+        <h2>Bay Pointe<br>at <em>Tellico Lake</em></h2>
+      </div>
+      <p class="bpd-project-desc">A complete interior design commission for a lakefront estate on Tellico Lake in the Tennessee hills — a 12,000 square foot residence conceived as a place of deep rest, generous gathering, and connection to the water and landscape that define it. Every material, furnishing, and spatial decision serves a single intention: a home that holds the fullness of life lived at the edge of something beautiful.</p>
+    </div>
+    <div class="bpd-specs">
+      <div class="bpd-spec"><div class="bpd-spec-val">12K</div><div class="bpd-spec-label">Square Feet</div></div>
+      <div class="bpd-spec"><div class="bpd-spec-val">9</div><div class="bpd-spec-label">Bedrooms</div></div>
+      <div class="bpd-spec"><div class="bpd-spec-val">TN</div><div class="bpd-spec-label">Tellico Lake</div></div>
+      <div class="bpd-spec"><div class="bpd-spec-val">2025</div><div class="bpd-spec-label">Commission Year</div></div>
+    </div>
+  </div>
+
+  <div class="bpd-contact">
+    <div class="bpd-contact-inner">
+      <div class="bpd-label" style="justify-content:center;margin-bottom:28px;">Contact</div>
+      <h2>Begin a <em>conversation.</em></h2>
+      <p class="bpd-contact-sub">Bay Pointe Designs accepts a select number of residential commissions each year. Inquiries are welcome from clients seeking a considered, unhurried approach to exceptional interiors.</p>
+      <div class="bpd-contact-item"><span class="bpd-contact-lbl">Email</span><span class="bpd-contact-val"><a href="mailto:valerie@baypointedesigns.com">valerie@baypointedesigns.com</a></span></div>
+      <div class="bpd-contact-item"><span class="bpd-contact-lbl">Based</span><span class="bpd-contact-val">Vonore, Tennessee</span></div>
+      <a href="mailto:valerie@baypointedesigns.com" class="bpd-btn">Send an Inquiry</a>
+    </div>
+  </div>
+
+  <div class="bpd-footer">
+    <div class="bpd-footer-logo">Bay Pointe Designs</div>
+    <div class="bpd-footer-copy">© 2025 Bay Pointe Designs, LLC. All rights reserved.</div>
+  </div>
+
+</div>
